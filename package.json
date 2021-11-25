@@ -1,0 +1,20 @@
+{
+  "name": "p3_zhang_jing",
+  "version": "1.0.0",
+  "description": "ohmyfood - openclassrooms Projet 3",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:.public/css/style.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JingZhangFerment/OC_P3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JingZhangFerment/OC_P3/issues"
+  },
+  "homepage": "https://github.com/JingZhangFerment/OC_P3#readme"
+}
