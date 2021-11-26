@@ -58,7 +58,7 @@ h1 {
   background-color: #f6f6f6;
 }
 
-h2 {
+.hero h2 {
   font-weight: bold;
   font-size: 22px;
   max-width: 250px;
@@ -79,6 +79,23 @@ h2 {
   background: linear-gradient(#FF79DA, #9356DC);
   border-color: #ffff;
   color: #ffff;
+}
+
+.operation {
+  padding: 60px 10px;
+}
+
+.operation h2 {
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.operation-steps {
+  display: flex;
+  background-color: #f6f6f6;
+  padding: 20px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
