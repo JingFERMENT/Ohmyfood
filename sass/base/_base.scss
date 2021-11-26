@@ -14,7 +14,11 @@ body {
   }
 
 h1 {
+    display: flex;
+    justify-content: center;
     font-family:'Shrikhand', cursive;
+    color:#000000;
+    
 }
 
 a {

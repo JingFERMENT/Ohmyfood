@@ -17,7 +17,10 @@ body {
 }
 
 h1 {
+  display: flex;
+  justify-content: center;
   font-family: "Shrikhand", cursive;
+  color: #000000;
 }
 
 a {
@@ -33,9 +36,8 @@ img {
   max-width: 100%;
 }
 
-.header_logo {
-  justify-content: center;
-  padding: 50px;
+.header {
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
