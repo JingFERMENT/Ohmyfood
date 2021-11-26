@@ -2,7 +2,6 @@ body {
   font-family: "Roboto", sans-serif;
   color: #000000;
   font-size: 16px;
-  font-weight: 300;
 }
 
 *, *:before, *:after {
@@ -14,13 +13,6 @@ body {
   /* Safari/Chrome, autres WebKit */
   margin: 0;
   padding: 0;
-}
-
-h1 {
-  display: flex;
-  justify-content: center;
-  font-family: "Shrikhand", cursive;
-  color: #000000;
 }
 
 a {
@@ -36,8 +28,57 @@ img {
   max-width: 100%;
 }
 
-.header {
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Shrikhand", cursive;
+  color: #000000;
+  margin: 0;
+  padding: 15px;
+}
+
+.location {
+  display: flex;
+  background-color: #eaeaea;
   padding: 20px;
+  justify-content: center;
+}
+
+.location p {
+  margin-left: 15px;
+}
+
+.hero {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 22px;
+  max-width: 250px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.hero-text {
+  color: #4d4d4dcc;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  border-radius: 200px;
+  padding: 13px 26px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  border-color: #ffff;
+  color: #ffff;
 }
 
 /*# sourceMappingURL=style.css.map */
