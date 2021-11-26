@@ -1,4 +1,7 @@
-$colorPrimary:#9356DC;
-$colorSecondary: #FF79DA;
-$colorTertiary: #99E2D0;
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/functions";
+@import "./base/base";
+@import "./layouts/header";
+
 
