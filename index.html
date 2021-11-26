@@ -4,38 +4,38 @@
     <meta charset = "utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ohmyfood!</title>
-    <!---CSS--->
-    <link rel="stylesheet" href="./public/css/normalize.css"/>
-    <link rel="stylesheet" href="./public/css/style.css"/>
-    <!---Google Fonts--->
+    <!--CSS-->
+    <link rel="stylesheet" href="/public/css/normalize.css"/>
+    <link rel="stylesheet" href="/public/css/style.css"/>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <!---Fontawesome--->
+    <!--Fontawesome-->
     <script src="https://kit.fontawesome.com/5bd805ce84.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="container"> 
     <header>
-        <img class="logo" src="./public/images/logo/ohmyfood.png" alt="logo"/>  
+        <img class="header_logo" src="./public/images/logo/ohmyfood.png" alt="logo_ohmyfood"/>  
     </header>
 
     <main>
-    <!---location--->  
+    <!--location-->  
         <div class="location">
             <i class="fas fa-map-marker-alt"></i>
             <p>Paris, Belleville</p>
         </div>
     
-    <!---hero--->  
+    <!--hero-->  
         <section class="hero">
             <h1>Réservez le menu qui vous convient</h1>
             <h2>Découvrez des restaurants d'exception, sélectionnés par nos soins.</h2>
             <button type="button" class="btn">Explorer nos restaurants</button>
         </section>
 
-    <!---operation---> 
+    <!--operation--> 
         <section class="operation">
             <h1>Fonctionnement</h1>
             <div class=operationStep>
@@ -57,44 +57,57 @@
             </div>
         </section>
     
-    <!---restaurants---> 
+    <!--restaurants--> 
         <section class="restaurants">
-            <article class="menu">
-                <img class="menuImage" src="./public/images/restaurants/LaPaletteDuGout.jpg" alt="La Palette du goût"/>
-                <div class="newMenu">Nouveau</div>
-                <div class="menuBloc">
-                    <div class=menuTitre>La pelette du goût</div>
-                    <p>Ménilmontant</p>
-                    <i class="far fa-heart"></i>
-                </div>
-            </article>
+            <h2>Restaurants</h2>
+            <div class="restaurants-lists">
+                <article class="restaurant-card">
+                    <a href="pagesMenu/LaPaletteDuGout.html">
+                        <img class="menuImage" src="./public/images/restaurants/LaPaletteDuGout.jpg" alt="La Palette du goût"/>
+                        <div class="newMenu">Nouveau</div>
+                        <div class="menuBloc">
+                        <div class=menuTitre>La pelette du goût</div>
+                            <p>Ménilmontant</p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
+                
         
-            <article class="menu">
-                <img class="menuImage" src="./public/images/restaurants/LaNoteEnchantée.jpg" alt="La note enchantée"/>
-                <div class="newMenu">Nouveau</div>
-                <div class="menuBloc">
-                    <div class=menuTitre>La note enchantée</div>
-                    <p>Charonne</p>
-                    <i class="far fa-heart"></i>
-                </div>
-            </article>
+                <article class="restaurant-card">
+                    <a href="pagesMenu/LaNoteEnchantee.html">
+                        <img class="menuImage" src="./public/images/restaurants/LaNoteEnchantée.jpg" alt="La note enchantée"/>
+                        <div class="newMenu">Nouveau</div>
+                        <div class="menuBloc">
+                        <div class=menuTitre>La note enchantée</div>
+                            <p>Charonne</p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
         
-            <article class="menu">
-                <img class="menuImage" src="./public/images/restaurants/ALaFrancaise.jpg" alt="A la française"/>
-                <div class="menuBloc">
-                    <div class=menuTitre>A la française</div>
-                    <p>Cité Rouge</p>
-                    <i class="far fa-heart"></i>
-                </div>
-            </article>
+                <article class="restaurant-card">
+                    <a href="pagesMenu/ALaFrancaise.html">
+                        <img class="menuImage" src="./public/images/restaurants/ALaFrancaise.jpg" alt="A la française"/>
+                        <div class="menuBloc">
+                            <div class=menuTitre>A la française</div>
+                            <p>Cité Rouge</p>
+                            <i class="far fa-heart"></i>
+                        </div>
+                    </a>
+                </article>
 
-            <article class="menu">
-                <img class="menuImage" src="./public/images/restaurants/LeDeliceDesSens.jpg" alt="Le délice des sens"/>
-                <div class="menuBloc">
-                    <div class=menuTitre>Le délice des sens</div>
-                    <p>Folie-Méricourt</p>
-                    <i class="far fa-heart"></i>
-                </div>
+                <article class="restaurant-card">
+                    <a href="pagesMenu/LeDelicedessens.html">
+                        <img class="menuImage" src="./public/images/restaurants/LeDeliceDesSens.jpg" alt="Le délice des sens"/>
+                        <div class="menuBloc">
+                            <div class=menuTitre>Le délice des sens</div>
+                                <p>Folie-Méricourt</p>
+                                <i class="far fa-heart"></i>
+                    </div>
+                    </a>
+                </article>
+            </div>
         </section>
     </main>
 
@@ -108,12 +121,12 @@
 
             <li>
                 <i class="fas fa-hands-helping"></i>
-                <div class="footertext">Devenir partenaire</p>
+                <div class="footertext">Devenir partenaire</div>
             </li>
 
             <li>Mentions légales</li>
             <li>Contact</li>  
-        </li>  
+        </ul> 
     </footer>
     </div>
 </body>
