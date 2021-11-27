@@ -28,6 +28,14 @@ img {
   max-width: 100%;
 }
 
+.hero-btn {
+  border-radius: 200px;
+  padding: 13px 26px;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  border-color: #ffff;
+  color: #ffff;
+}
+
 h1 {
   display: flex;
   justify-content: center;
@@ -70,14 +78,6 @@ h1 {
   text-align: center;
   font-size: 18px;
   margin-bottom: 20px;
-}
-
-.hero-btn {
-  border-radius: 200px;
-  padding: 13px 26px;
-  background: linear-gradient(#FF79DA, #9356DC);
-  border-color: #ffff;
-  color: #ffff;
 }
 
 .operation {
