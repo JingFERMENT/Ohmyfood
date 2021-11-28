@@ -1,7 +1,13 @@
 .hero-btn {
-    border-radius: 200px;
-    padding: 13px 26px;
-    background: linear-gradient(170deg, #FF79DA, #9356DC,);
-    border-color: #ffff;
+    border-radius:200px;
+    padding:13px 26px;
+    background:linear-gradient(170deg, #FF79DA, #9356DC,);
+    border-color:#ffff;
     color:#ffff;
+    &:hover{
+        opacity:0.8;
+        transition:opacity .3s;
+        box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition:opacity .3s;
+    }
 }

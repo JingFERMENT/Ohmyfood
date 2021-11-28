@@ -1,9 +1,10 @@
-h1 {
-    display: flex;
+.header-title {
+    display:flex;
     justify-content: center;
-    align-items: center;
+    position:relative;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
     font-family:'Shrikhand', cursive;
-    color:#000000;
-    margin: 0;
-    padding: 15px;
 }

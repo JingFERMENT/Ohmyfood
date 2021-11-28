@@ -16,6 +16,7 @@
 
 .operation-step {
     display:flex;
+    justify-content: space-between;
     align-items: center;
     background-color:#f6f6f6;
     padding:25px;
@@ -24,6 +25,7 @@
 }
 
 .operation-number {
+    position: absolte;
     border-radius: 200px;
     background-color:#9356DC;
     color: #ffff;

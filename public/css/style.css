@@ -35,15 +35,22 @@ img {
   border-color: #ffff;
   color: #ffff;
 }
+.hero-btn:hover {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s;
+}
 
-h1 {
+.header-title {
   display: flex;
   justify-content: center;
-  align-items: center;
+  position: relative;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
   font-family: "Shrikhand", cursive;
-  color: #000000;
-  margin: 0;
-  padding: 15px;
 }
 
 .location {
@@ -81,39 +88,13 @@ h1 {
 }
 
 .operation {
-  padding: 40px 20px;
-}
-
-.operation h2 {
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 25px;
-}
-
-.operation-steps {
   display: flex;
   flex-direction: column;
-  gap: 25px;
 }
 
-.operation-step {
-  display: flex;
-  align-items: center;
-  background-color: #f6f6f6;
-  padding: 25px;
-  border-radius: 20px;
-  box-shadow: 2px 2px 8px #e6e6e6;
-}
-
-.operation-number {
-  border-radius: 200px;
-  background-color: #9356DC;
-  color: #ffff;
-  padding: 5px 9px;
-}
-
-.operation-icon {
+.fas {
   color: #7e7e7e;
+  margin: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
