@@ -1,4 +1,22 @@
 .restaurants {
-    padding:40px 20px;
+    padding:50px 20px;
     background-color:$backgroundColorBloc;
+}
+
+.restaurants h2 {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+.restaurants-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.restaurant-card {
+    background-color:#ffff;
+    border-radius: 20px;
+    box-shadow: $boxshadowColorCard;
 }
