@@ -13,6 +13,10 @@
     display: flex;
     justify-content: space-between;
     gap: 25px;
+    @media screen and (max-width:768px) {
+        display:flex;
+        flex-direction:column;
+    }
 }
 
 .restaurant-card {
@@ -20,6 +24,9 @@
     background-color:#ffff;
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
+    @media screen and (max-width: 768px){
+        width: 100%;
+    }
 }
 
 .menu-image {
