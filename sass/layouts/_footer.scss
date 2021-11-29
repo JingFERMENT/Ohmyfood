@@ -27,7 +27,7 @@ footer h3 {
     width:18px;
 }
 
-ul {
+.footer-nav-bar{
     margin-left: 100px;
     display:flex;
     @media screen and (max-width:768px) {
@@ -37,7 +37,7 @@ ul {
     }
 }
 
-li {
+.footer-nav-bar a {
     list-style: none;
     display:flex;
     padding: 30px;

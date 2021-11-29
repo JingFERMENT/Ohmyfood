@@ -87,19 +87,19 @@ footer h3 {
   width: 18px;
 }
 
-ul {
+.footer-nav-bar {
   margin-left: 100px;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  ul {
+  .footer-nav-bar {
     flex-direction: column;
     margin-left: 0px;
     margin-top: 20px;
   }
 }
 
-li {
+.footer-nav-bar a {
   list-style: none;
   display: flex;
   padding: 30px;
@@ -107,7 +107,7 @@ li {
   gap: 10px;
 }
 @media screen and (max-width: 768px) {
-  li {
+  .footer-nav-bar a {
     padding: 5px 0px;
   }
 }
@@ -145,6 +145,7 @@ li {
   color: #4d4d4dcc;
   text-align: center;
   font-size: 18px;
+  font-weight: 350;
   margin-bottom: 20px;
 }
 
@@ -239,7 +240,7 @@ li {
   }
 }
 
-.new-menu {
+.new-restaurant {
   color: #008766;
   padding: 10px;
   background-color: #99E2D0;
@@ -248,26 +249,26 @@ li {
   right: 20px;
 }
 
-.menu-image {
+.restaurant-image {
   height: 230px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
-.menu-bloc {
+.restaurant-bloc {
   padding: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.menu-bloc p {
+.restaurant-bloc h4 {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 5px;
 }
 
-.menu-location {
+.restaurant-location {
   font: size 16px;
   font-weight: 350;
 }
