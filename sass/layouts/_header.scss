@@ -5,6 +5,16 @@
     box-shadow:$boxshadowColorHeader;
 }
 
-h1 {
+.header-logo {
     font-family:'Shrikhand', cursive;
+}
+
+.header-menu {
+    font-family:'Shrikhand', cursive;
+    display:flex;
+}
+
+.header-menu-logo {
+    font-family:'Shrikhand', cursive;
+    font-weight:400;
 }

@@ -52,8 +52,18 @@ img {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+.header-logo {
   font-family: "Shrikhand", cursive;
+}
+
+.header-menu {
+  font-family: "Shrikhand", cursive;
+  display: flex;
+}
+
+.header-menu-logo {
+  font-family: "Shrikhand", cursive;
+  font-weight: 400;
 }
 
 footer {
