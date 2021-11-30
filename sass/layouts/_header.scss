@@ -5,20 +5,11 @@
     box-shadow:$boxshadowColorHeader;
 }
 
-.header-logo {
-    font-family:'Shrikhand', cursive;
-}
-
 .header-menu {
     display:flex;
     align-items: center;
     justify-content: center;
     
-}
-
-.header-menu-logo {
-    font-family:'Shrikhand', cursive;
-    font-weight:400;
 }
 
 .fa-arrow-left {

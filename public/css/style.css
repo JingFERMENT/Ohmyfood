@@ -21,6 +21,16 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+  margin: 15px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 25px;
+}
+
 .btn {
   cursor: pointer;
 }
@@ -33,16 +43,16 @@ img {
 
 .hero-btn {
   border-radius: 200px;
-  padding: 13px 26px;
+  padding: 17px 26px;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
   border-color: #ffff;
   color: #ffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 .hero-btn:hover {
-  opacity: 0.8;
-  transition: opacity 0.3s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: opacity 0.3s;
+  filter: brightness(1.1);
+  transition: brightness(1.1) 0.3s;
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.3);
 }
 
 .header-title {
@@ -52,19 +62,10 @@ img {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
 
-.header-logo {
-  font-family: "Shrikhand", cursive;
-}
-
 .header-menu {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.header-menu-logo {
-  font-family: "Shrikhand", cursive;
-  font-weight: 400;
 }
 
 .fa-arrow-left {
@@ -144,7 +145,7 @@ footer {
 }
 
 .hero {
-  padding: 60px 0px;
+  padding: 40px 0px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -153,10 +154,8 @@ footer {
 }
 
 .hero h2 {
-  font-weight: bold;
-  font-size: 22px;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 @media screen and (max-width: 768px) {
   .hero h2 {
@@ -167,25 +166,24 @@ footer {
 .hero-text {
   color: #4d4d4dcc;
   text-align: center;
-  font-size: 18px;
-  font-weight: 350;
-  margin-bottom: 20px;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom: 30px;
 }
 
 .operation {
-  padding: 40px 20px;
+  padding: 40px;
 }
 
 .operation h2 {
-  font-weight: bold;
-  font-size: 22px;
+  text-align: center;
   margin-bottom: 25px;
 }
 
 .operation-steps {
   padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   gap: 25px;
 }
 
@@ -195,7 +193,7 @@ footer {
   background-color: #f6f6f6;
   padding: 25px 40px;
   border-radius: 20px;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .operation-step:hover {
   background-color: #f5edff;
@@ -230,8 +228,6 @@ footer {
 }
 
 .restaurants h2 {
-  font-weight: bold;
-  font-size: 22px;
   margin-bottom: 25px;
 }
 
@@ -252,7 +248,7 @@ footer {
   width: 25%;
   background-color: #ffff;
   border-radius: 20px;
-  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .restaurant-card:hover {
   transform: scale(1.02);
@@ -302,7 +298,9 @@ footer {
 .like-btn .like-btn--checked {
   color: transparent;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+  background-clip: text;
+  /*clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+  */
 }
 
 /*# sourceMappingURL=style.css.map */

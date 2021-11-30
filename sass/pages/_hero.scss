@@ -1,5 +1,5 @@
 .hero {
-    padding:60px 0px;
+    padding:40px 0px;
     display:flex;
     justify-content:center;
     flex-direction:column;
@@ -8,10 +8,8 @@
 }
 
 .hero h2 {
-    font-weight:bold;
-    font-size:22px;
     text-align:center;
-    margin-bottom:15px;
+    margin-bottom:12px;
     @media screen and (max-width:768px){
         max-width:250px;
     }
@@ -21,8 +19,8 @@
 .hero-text {
     color:#4d4d4dcc;
     text-align:center;
-    font-size:18px;
-    font-weight:350;
-    margin-bottom:20px;
+    font-size:19px;
+    font-weight:400;
+    margin-bottom:30px;
 }
 

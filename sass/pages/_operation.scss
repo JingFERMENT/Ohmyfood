@@ -1,17 +1,16 @@
 .operation {
-    padding:40px 20px;
+    padding:40px;
 }
 
 .operation h2 {
-    font-weight:bold;
-    font-size:22px;
+    text-align: center;
     margin-bottom:25px;
 }
 
 .operation-steps {
     padding:10px;
     display:flex;
-    flex-direction:column;
+    justify-content: center;
     gap:25px;
 }
 
