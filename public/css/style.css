@@ -57,13 +57,21 @@ img {
 }
 
 .header-menu {
-  font-family: "Shrikhand", cursive;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-menu-logo {
   font-family: "Shrikhand", cursive;
   font-weight: 400;
+}
+
+.fa-arrow-left {
+  font-size: 22px;
+  position: absolute;
+  left: 35px;
+  top: 28px;
 }
 
 footer {
@@ -119,6 +127,12 @@ footer {
   .footer-nav-bar a {
     padding: 5px 0px;
   }
+}
+
+.menu-hero-image {
+  width: 100%;
+  height: 266px;
+  object-fit: cover;
 }
 
 .location {
@@ -265,13 +279,13 @@ footer {
   object-fit: cover;
 }
 
-.restaurant-bloc {
+.restaurant-block {
   padding: 15px;
   display: flex;
   justify-content: space-between;
 }
 
-.restaurant-bloc h4 {
+.restaurant-block h4 {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 5px;
@@ -282,8 +296,13 @@ footer {
   font-weight: 350;
 }
 
-.fa-heart {
+.like-btn {
   font-size: 25px;
+}
+.like-btn .like-btn--checked {
+  color: transparent;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
 }
 
 /*# sourceMappingURL=style.css.map */

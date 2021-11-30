@@ -10,11 +10,20 @@
 }
 
 .header-menu {
-    font-family:'Shrikhand', cursive;
     display:flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .header-menu-logo {
     font-family:'Shrikhand', cursive;
     font-weight:400;
+}
+
+.fa-arrow-left {
+    font-size:22px;
+    position:absolute;
+    left:35px;
+    top: 28px;
 }
