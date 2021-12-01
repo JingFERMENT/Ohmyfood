@@ -31,20 +31,21 @@
     }
 }
 
+.restaurant-image {
+    height:170px;
+    width:100%;
+    border-radius: 20px 20px 0px 0px;
+    object-fit: cover;
+}
+
 .new-restaurant {
     color:$colorNewMenu;
-    padding: 10px;
+    padding: 6px 10px;
     background-color:$colorTertiary;
     position:absolute;
     top:10px;
     right:20px;
-}
-
-.restaurant-image {
-    height:230px;
-    width:100%;
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
+    font-size:14px;
 }
 
 .restaurant-block {
@@ -68,8 +69,8 @@
     .like-btn--checked {
     color:transparent;
     background:linear-gradient(170deg, #FF79DA, #9356DC,);
-    background-clip:text;
-    /*clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-    */}
+    /*background-clip:text;*/
+    clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    }
 }
 

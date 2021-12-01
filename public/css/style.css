@@ -139,13 +139,13 @@ footer {
 .location {
   display: flex;
   background-color: #eaeaea;
-  padding: 20px;
+  padding: 15px;
   justify-content: center;
   gap: 15px;
 }
 
 .hero {
-  padding: 40px 0px;
+  padding: 50px 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -174,26 +174,43 @@ footer {
 .operation {
   padding: 40px;
 }
+@media screen and (max-width: 768px) {
+  .operation {
+    padding: 60px 20px;
+  }
+}
 
 .operation h2 {
   text-align: center;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 768px) {
+  .operation h2 {
+    text-align: left;
+  }
 }
 
 .operation-steps {
   padding: 10px;
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 40px;
+}
+@media screen and (max-width: 768px) {
+  .operation-steps {
+    flex-direction: column;
+    gap: 22px;
+  }
 }
 
 .operation-step {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: #f6f6f6;
-  padding: 25px 40px;
+  padding: 25px 38px;
   border-radius: 20px;
-  box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .operation-step:hover {
   background-color: #f5edff;
@@ -204,7 +221,7 @@ footer {
 
 .operation-number {
   position: absolute;
-  left: 20px;
+  left: -8px;
   border-radius: 200px;
   background-color: #9356DC;
   color: #ffff;
@@ -212,7 +229,7 @@ footer {
 }
 
 .operation-step p {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .operation-icon {
@@ -248,7 +265,7 @@ footer {
   width: 25%;
   background-color: #ffff;
   border-radius: 20px;
-  box-shadow: 4px 2px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .restaurant-card:hover {
   transform: scale(1.02);
@@ -259,20 +276,21 @@ footer {
   }
 }
 
+.restaurant-image {
+  height: 170px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+}
+
 .new-restaurant {
   color: #008766;
-  padding: 10px;
+  padding: 6px 10px;
   background-color: #99E2D0;
   position: absolute;
   top: 10px;
   right: 20px;
-}
-
-.restaurant-image {
-  height: 230px;
-  width: 100%;
-  border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
+  font-size: 14px;
 }
 
 .restaurant-block {
@@ -298,9 +316,8 @@ footer {
 .like-btn .like-btn--checked {
   color: transparent;
   background: linear-gradient(170deg, #FF79DA, #9356DC);
-  background-clip: text;
-  /*clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-  */
+  /*background-clip:text;*/
+  clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
 }
 
 /*# sourceMappingURL=style.css.map */

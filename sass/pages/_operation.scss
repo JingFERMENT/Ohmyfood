@@ -1,24 +1,37 @@
 .operation {
     padding:40px;
+    @media screen and (max-width: 768px){
+        padding:60px 20px;
+    }
 }
 
 .operation h2 {
     text-align: center;
     margin-bottom:25px;
+    @media screen and (max-width: 768px){
+        text-align:left;
+    }
+
 }
 
 .operation-steps {
     padding:10px;
     display:flex;
     justify-content: center;
-    gap:25px;
+    gap:40px;
+    @media screen and (max-width: 768px){
+        flex-direction:column;
+        gap:22px;
+        
+    }
 }
 
 .operation-step {
+    position:relative;
     display:flex;
     align-items:center;
     background-color:$backgroundColorBloc;
-    padding:25px 40px;
+    padding:25px 38px;
     border-radius:20px;
     box-shadow:$boxshadowColorCard;
     &:hover {
@@ -31,7 +44,7 @@
 
 .operation-number {
     position: absolute;
-    left:20px;
+    left:-8px;
     border-radius: 200px;
     background-color:$colorPrimary;
     color: #ffff;
@@ -39,7 +52,7 @@
 }
 
 .operation-step p {
-    margin-left: 30px;
+    margin-left: 25px;
 }
 .operation-icon {
     color: #7d7d7d;
