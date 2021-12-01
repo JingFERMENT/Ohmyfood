@@ -78,14 +78,13 @@ img {
 footer {
   background-color: #353535;
   color: #ffff;
-  padding: 30px;
+  padding: 40px 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 768px) {
   footer {
-    align-items: center;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 
@@ -102,7 +101,7 @@ footer {
 .footerlist-icon {
   text-align: center;
   font-size: 12px;
-  width: 18px;
+  width: 15px;
 }
 
 .footer-nav-bar {
@@ -120,7 +119,7 @@ footer {
 .footer-nav-bar a {
   list-style: none;
   display: flex;
-  padding: 30px;
+  padding: 0px 30px;
   align-items: center;
   gap: 10px;
 }
@@ -277,7 +276,7 @@ footer {
 }
 
 .restaurant-image {
-  height: 170px;
+  height: 180px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
@@ -285,11 +284,11 @@ footer {
 
 .new-restaurant {
   color: #008766;
-  padding: 6px 10px;
+  padding: 7px 12px;
   background-color: #99E2D0;
   position: absolute;
   top: 10px;
-  right: 20px;
+  right: 12px;
   font-size: 14px;
 }
 
@@ -306,7 +305,7 @@ footer {
 }
 
 .restaurant-location {
-  font: size 16px;
+  font-size: 16px;
   font-weight: 350;
 }
 

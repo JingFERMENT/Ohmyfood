@@ -32,7 +32,7 @@
 }
 
 .restaurant-image {
-    height:170px;
+    height:180px;
     width:100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -40,11 +40,11 @@
 
 .new-restaurant {
     color:$colorNewMenu;
-    padding: 6px 10px;
+    padding:7px 12px;
     background-color:$colorTertiary;
     position:absolute;
     top:10px;
-    right:20px;
+    right:12px;
     font-size:14px;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .restaurant-location {
-    font: size 16px;
+    font-size: 16px;
     font-weight:350;
 }
 .like-btn {
