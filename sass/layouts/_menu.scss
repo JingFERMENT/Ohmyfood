@@ -1,5 +1,33 @@
+.menu {
+    position:relative;
+    margin-top:-50px;
+    padding: 40px 20px;
+    border-radius: 35px 35px 0px 0px;
+    background-color: #f6f6f6;
+}
+
 .menu-hero-image {
     width:100%;
-    height:266px;
+    height:280px;
     object-fit: cover;
+}
+
+.menu-header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:30px;
+}
+.menu-title {
+    font-family:'Shrikhand', cursive;
+    font-size:28px;
+}
+
+.fa-heart {
+    font-size:25px;
+}
+
+.menu-content {
+    display:flex;
+    justify-content: space-between;
 }
