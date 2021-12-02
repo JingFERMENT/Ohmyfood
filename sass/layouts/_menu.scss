@@ -4,6 +4,11 @@
     padding: 40px 20px;
     border-radius: 35px 35px 0px 0px;
     background-color: #f6f6f6;
+    @media screen and (min-width:1024px) {
+        width:80vw;
+        margin:-30px auto 0px auto;
+        padding: 60px;
+    }
 }
 
 .menu-hero-image {
@@ -14,10 +19,11 @@
 
 .menu-header {
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom:30px;
+    margin-bottom:10px;
+    column-gap:33px;
 }
+
 .menu-title {
     font-family:'Shrikhand', cursive;
     font-size:28px;
@@ -28,6 +34,53 @@
 }
 
 .menu-content {
+    display:grid;
+    grid-template-columns: 1fr;
+    gap:30px;
+    @media screen and (min-width:1024px) {
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-gap:35px;
+    }
+  
+}
+
+.menu-list {
     display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.menu-block h3 {
+    margin: 22px 0px;
+}
+
+.menu-card {
+    background-color: #ffff;
+    padding: 13px;
+    border-radius: 20px;
+    box-shadow: $boxshadowColorCard;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menu-card h4 {
+    margin-bottom: 5px;;
+}
+
+
+.menu-card-description {
+    display:flex;
+    align-items: center;
     justify-content: space-between;
+}
+
+.menu-card-text {
+    font-size: 15px;
+    font-weight:300;
+}
+
+.menu-card-price {
+    font-size:14px;
+
 }
