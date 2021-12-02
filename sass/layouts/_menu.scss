@@ -42,7 +42,6 @@
     grid-template-rows: 1fr;
     grid-gap:35px;
     }
-  
 }
 
 .menu-list {
@@ -82,5 +81,10 @@
 
 .menu-card-price {
     font-size:14px;
+}
 
+.menu-btn {
+    display:flex;
+    justify-content: center;
+    padding: 40px 40px 0px 40px;
 }
