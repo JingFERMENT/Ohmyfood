@@ -27,6 +27,7 @@
 .menu-title {
     font-family:'Shrikhand', cursive;
     font-size:28px;
+    font-weight:500;
 }
 
 .fa-heart {
@@ -52,6 +53,16 @@
 
 .menu-block h3 {
     margin: 22px 0px;
+    position:relative;
+    &::after {
+        content:"";
+        position:absolute;
+        top:24px;
+        left:1px;
+        width: 43px;
+        height: 3px;
+        background-color: $colorTertiary;
+    }
 }
 
 .menu-card {
@@ -76,11 +87,11 @@
 
 .menu-card-text {
     font-size: 15px;
-    font-weight:300;
+    font-weight:390;
 }
 
 .menu-card-price {
-    font-size:14px;
+    font-size:15px;
 }
 
 .menu-btn {
