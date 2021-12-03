@@ -1,14 +1,12 @@
 .fa-heart {
-    font-size:25px;
-    cursor: pointer;
+    font-size:26px;
     background-size:100% 0%;
     background-position: bottom;
     transition: all 0.5s ease-in-out;
     &:hover {
-    color:transparent;
     background:$gradient;
     background-size:100% 100%;
+    color:transparent;
     clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
-    
-    }
+    }  
 }

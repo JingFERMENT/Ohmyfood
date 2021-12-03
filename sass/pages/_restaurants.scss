@@ -23,9 +23,6 @@
     background-color:#ffff;
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
-    &:hover {
-        transform: scale(1.02);
-    }
     @media screen and (max-width: 768px){
         width: 100%;
     }
@@ -63,6 +60,5 @@
     font-size: 16px;
     font-weight:350;
 }
-
 
 
