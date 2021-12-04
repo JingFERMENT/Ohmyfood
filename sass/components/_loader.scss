@@ -10,7 +10,7 @@
     animation:page-loading-spinner 3s cubic-bezier(1,.32,.84,.37) forwards;
   }
 
-  .loading-spinner{
+.loading-spinner {
     width: 120px;
     height: 120px;
     padding: 10px;
@@ -20,21 +20,24 @@
     animation: loading-spinner 1s linear infinite;
   }
 
-  @keyframes page-loading-spinner {
+@keyframes page-loading-spinner {
     0% {
         opacity: 1; 
+
     }
     100% {
         opacity: 0;
+        z-index:-1;
     }
   }
 
-  @keyframes loading-spinner {
+@keyframes loading-spinner {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
+        z-index:-1;
     }
   }
   

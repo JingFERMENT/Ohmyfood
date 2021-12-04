@@ -109,6 +109,7 @@ img {
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes loading-spinner {
@@ -117,6 +118,7 @@ img {
   }
   100% {
     transform: rotate(360deg);
+    z-index: -1;
   }
 }
 .header-title {
