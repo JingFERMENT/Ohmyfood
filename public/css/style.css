@@ -90,7 +90,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: page-loading-spinner 3s cubic-bezier(1, 0.32, 0.84, 0.37) forwards;
+  animation: fade-in 3s cubic-bezier(1, 0.08, 0.96, 0.2) forwards;
 }
 
 .loading-spinner {
@@ -100,19 +100,19 @@ img {
   border-radius: 50%;
   border: 12px solid;
   border-color: transparent #9356DC transparent #FF79DA;
-  animation: loading-spinner 1s linear infinite;
+  animation: spin 1s linear infinite;
 }
 
-@keyframes page-loading-spinner {
+@keyframes fade-in {
   0% {
-    opacity: 1;
+    opacity: 0.9;
   }
   100% {
     opacity: 0;
     z-index: -1;
   }
 }
-@keyframes loading-spinner {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -243,12 +243,6 @@ footer {
   }
 }
 
-.menu-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
 .menu-block h3 {
   margin: 22px 0px;
   position: relative;
@@ -261,6 +255,12 @@ footer {
   width: 43px;
   height: 3px;
   background-color: #99E2D0;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .menu-card {
@@ -297,6 +297,28 @@ footer {
   padding: 40px 40px 0px 40px;
 }
 
+.delay-bloc-1 {
+  animation: card-in 0.3s ease-in-out;
+}
+
+.delay-bloc-2 {
+  animation: card-in 0.6s ease-in-out;
+}
+
+.delay-bloc-3 {
+  animation: card-in 0.9s ease-in-out;
+}
+
+@keyframes card-in {
+  0% {
+    transform: translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 .location {
   display: flex;
   background-color: #eaeaea;

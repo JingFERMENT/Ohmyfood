@@ -41,12 +41,6 @@
     }
 }
 
-.menu-list {
-    display:flex;
-    flex-direction: column;
-    gap:20px;
-}
-
 .menu-block h3 {
     margin: 22px 0px;
     position:relative;
@@ -59,6 +53,12 @@
         height: 3px;
         background-color: $colorTertiary;
     }
+}
+
+.menu-list {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
 }
 
 .menu-card {
@@ -95,3 +95,26 @@
     justify-content: center;
     padding: 40px 40px 0px 40px;
 }
+
+.delay-bloc-1 {
+    animation: card-in 0.3s ease-in-out;
+}
+
+.delay-bloc-2 {
+    animation: card-in 0.6s ease-in-out;
+}
+
+.delay-bloc-3 {
+    animation: card-in 0.9s ease-in-out;
+}
+
+@keyframes card-in {
+    0% {
+        transform:translateY(15px);
+        opacity: 0;
+    }
+    100% {
+        transform:translateY(0px);
+        opacity: 1;
+    }
+  }
