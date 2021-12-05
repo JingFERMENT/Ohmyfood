@@ -298,12 +298,15 @@ footer {
 }
 
 .menu-card-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 15px;
   background-color: #99E2D0;
 }
 
 .fa-check {
-  font-size: 20px;
+  font-size: 15px;
   border-radius: 50%;
   border: 10px solid #ffff;
   background-color: #ffff;
