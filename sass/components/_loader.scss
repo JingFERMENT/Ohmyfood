@@ -16,7 +16,7 @@
     padding: 10px;
     border-radius: 50%;
     border: 12px solid;
-    border-color:transparent $colorPrimary transparent $colorSecondary;
+    border-color:$colorPrimary $colorTertiary $colorSecondary $colorPrimary;
     animation: spin 1s linear infinite;
   }
 
