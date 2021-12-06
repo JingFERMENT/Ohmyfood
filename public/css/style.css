@@ -266,6 +266,7 @@ footer {
 }
 
 .menu-card {
+  width: 350px;
   display: flex;
   overflow: hidden;
   cursor: pointer;
@@ -312,6 +313,11 @@ footer {
   align-items: center;
   border-radius: 0 20px 20px 0;
   background-color: #99E2D0;
+  margin-right: -80px;
+  transition: margin 0.3s ease-in-out;
+}
+.menu-card-check:hover {
+  margin-right: 0;
 }
 
 .fa-check {
