@@ -63,22 +63,23 @@
 
 .menu-card {
     display:flex;
+    overflow:hidden;
     cursor: pointer;
-    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: $boxshadowColorCard;
+    background-color: #ffff;
 }
 
 .menu-card-body {
-    background-color: #ffff;
     padding: 13px;
-    border-radius: 20px;
-    box-shadow: $boxshadowColorCard;
-    min-width:0;
     flex:1;
-
-}
-
-.menu-card-body h4 {
-    margin-bottom: 5px;;
+    min-width: 0;
+    h4 {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow:hidden;
+        margin-bottom: 5px;
+    }
 }
 
 .menu-card-description {
@@ -88,8 +89,12 @@
 }
 
 .menu-card-text {
-    font-size: 15px;
+    font-size: 14px;
     font-weight:390;
+    flex:1;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
 }
 
 .menu-card-price {
@@ -97,11 +102,12 @@
 }
 
 .menu-card-check {
+    width:80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding:15px;
-    background-color:$colorTertiary;
+    border-radius: 0 20px 20px 0;
+    background-color:$colorTertiary; 
 }
 
 .fa-check {
