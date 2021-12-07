@@ -266,7 +266,7 @@ footer {
 }
 
 .menu-card {
-  width: 350px;
+  width: 335px;
   display: flex;
   overflow: hidden;
   cursor: pointer;
@@ -316,7 +316,8 @@ footer {
   margin-right: -80px;
   transition: margin 0.3s ease-in-out;
 }
-.menu-card-check:hover {
+
+.menu-card:hover .menu-card-check {
   margin-right: 0;
 }
 
@@ -335,15 +336,15 @@ footer {
 }
 
 .delay-bloc-1 {
-  animation: card-in 0.5s ease-in-out;
-}
-
-.delay-bloc-2 {
   animation: card-in 1s ease-in-out;
 }
 
+.delay-bloc-2 {
+  animation: card-in 2s ease-in-out;
+}
+
 .delay-bloc-3 {
-  animation: card-in 1.5s ease-in-out;
+  animation: card-in 3s ease-in-out;
 }
 
 @keyframes card-in {

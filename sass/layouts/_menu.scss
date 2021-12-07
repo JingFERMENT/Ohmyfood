@@ -62,7 +62,7 @@
 }
 
 .menu-card {
-    width:350px;
+    width:335px;
     display:flex;
     overflow:hidden;
     cursor: pointer;
@@ -111,10 +111,11 @@
     background-color:$colorTertiary; 
     margin-right:-80px;
     transition: margin 0.3s ease-in-out;
-    &:hover{
-        margin-right:0;
-    } 
 }
+
+.menu-card:hover .menu-card-check{
+    margin-right:0;
+} 
 
 .fa-check {
     font-size:15px;
@@ -131,15 +132,15 @@
 }
 
 .delay-bloc-1 {
-    animation: card-in 0.5s ease-in-out;
-}
-
-.delay-bloc-2 {
     animation: card-in 1s ease-in-out;
 }
 
+.delay-bloc-2 {
+    animation: card-in 2s ease-in-out;
+}
+
 .delay-bloc-3 {
-    animation: card-in 1.5s ease-in-out;
+    animation: card-in 3s ease-in-out;
 }
 
 @keyframes card-in {
