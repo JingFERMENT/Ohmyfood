@@ -4,11 +4,6 @@
     padding: 40px 20px;
     border-radius: 35px 35px 0px 0px;
     background-color: #f6f6f6;
-    @media screen and (min-width:1024px) {
-        width:80vw;
-        margin:-30px auto 0px auto;
-        padding: 60px;
-    }
 }
 
 .menu-hero-image {
@@ -62,19 +57,26 @@
 }
 
 .menu-card {
-    width:335px;
     display:flex;
     overflow:hidden;
     cursor: pointer;
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
     background-color: #ffff;
+    &:hover {
+        .menu-card-check {
+            margin-right:0;
+        } 
+        .fa-check {
+            animation:check-in 0.3s $transitionTimingLoader;
+        }
+    }
 }
 
 .menu-card-body {
     padding: 13px;
     flex:1;
-    min-width: 0;
+    width: 235px;
     h4 {
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -90,7 +92,7 @@
 }
 
 .menu-card-text {
-    font-size: 14px;
+    font-size: 15px;
     font-weight:390;
     flex:1;
     white-space: nowrap;
@@ -100,10 +102,12 @@
 
 .menu-card-price {
     font-size:15px;
+    display:inline-block;
+    margin-right:10px;
 }
 
 .menu-card-check {
-    width:80px;
+    width:75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,10 +116,6 @@
     margin-right:-80px;
     transition: margin 0.3s ease-in-out;
 }
-
-.menu-card:hover .menu-card-check{
-    margin-right:0;
-} 
 
 .fa-check {
     font-size:15px;
@@ -132,24 +132,33 @@
 }
 
 .delay-bloc-1 {
-    animation: card-in 1s ease-in-out;
+    animation: card-in 1s ease-in;
 }
 
 .delay-bloc-2 {
-    animation: card-in 2s ease-in-out;
+    animation: card-in 2s ease-in 0.1s;
 }
 
 .delay-bloc-3 {
-    animation: card-in 3s ease-in-out;
+    animation: card-in 3s ease-in 0.1s;
 }
 
 @keyframes card-in {
     0% {
-        transform:translateY(20px);
+        transform:translateY(30px);
         opacity: 0;
     }
     100% {
         transform:translateY(0px);
         opacity: 1;
+    }
+  }
+
+  @keyframes check-in {
+    0% {
+        transform:rotate(0);
+    }
+    100% {
+        transform:rotate(360deg);
     }
   }
