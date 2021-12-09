@@ -15,9 +15,11 @@
 .menu-header {
     display:flex;
     align-items: center;
-    justify-content: center;
     margin-bottom:10px;
     column-gap:33px;
+    @media screen and (min-width:1024px){
+        justify-content: center;
+    }
 }
 
 .menu-title {
@@ -93,7 +95,7 @@
 }
 
 .menu-card-text {
-    font-size: 15px;
+    font-size: 15.5px;
     font-weight:390;
     flex:1;
     white-space: nowrap;
