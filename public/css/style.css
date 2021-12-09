@@ -39,7 +39,8 @@ h3 {
 }
 
 h4 {
-  font-size: 18.6px;
+  font-size: 17px;
+  font-weight: 510;
 }
 
 .btn {
@@ -52,7 +53,7 @@ img {
   object-fit: cover;
 }
 
-.primairy-btn {
+.hero-btn, .ordering-btn {
   border-radius: 200px;
   padding: 17px 40px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
@@ -62,7 +63,7 @@ img {
   transition: all 0.25s;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
 }
-.primairy-btn:hover {
+.hero-btn:hover, .ordering-btn:hover {
   filter: brightness(1.1);
   box-shadow: 2px 8px 8px 0 rgba(0, 0, 0, 0.3);
 }

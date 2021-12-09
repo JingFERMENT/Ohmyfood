@@ -1,14 +1,3 @@
-.primairy-btn {
-    border-radius:200px;
-    padding:17px 40px;
-    background: $gradient;
-    border-color:#ffff;
-    color:#ffff;
-    filter:brightness(1);
-    transition:all 0.25s;
-    box-shadow:$boxshadowColorHeader;
-    &:hover{
-        filter:brightness(1.1); 
-        box-shadow:$boxshadowHeroButtonHover;
-    }
+.ordering-btn {
+    @extend .hero-btn;
 }
