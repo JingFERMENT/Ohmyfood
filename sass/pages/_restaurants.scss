@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    @media screen and (max-width:768px) {
+    @media screen and (max-width:$max-width) {
         display:flex;
         flex-direction:column;
     }
@@ -22,7 +22,7 @@
     background-color:#ffff;
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: max-width){
         width: 100%;
     }
 }

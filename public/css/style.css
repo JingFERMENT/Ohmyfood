@@ -235,7 +235,7 @@ footer {
   grid-template-columns: 1fr;
   gap: 30px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1 1024px) {
   .menu-content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -497,7 +497,7 @@ footer {
   border-radius: 20px;
   box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: max-width) {
   .restaurant-card {
     width: 100%;
   }

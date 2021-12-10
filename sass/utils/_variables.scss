@@ -1,5 +1,4 @@
 //color
-
 $colorPrimary:#9356DC;
 $colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
@@ -7,7 +6,6 @@ $colorOperationCardHover:#f5edff;
 $colorNewMenu:#008766;
 
 //backgroundColor
-
 $backgroundColorBloc:#f6f6f6;
 $backgroundColorFooter:#353535;
 
@@ -21,3 +19,9 @@ $gradient:linear-gradient(175deg, $colorSecondary, $colorPrimary);
 
 //transition-timing
 $transitionTimingLoader:cubic-bezier(1,.08,.96,.2);
+
+//responsive for mobile
+$max-width: "768px";
+
+//responsive for desktop
+$min-width: "1024px";
