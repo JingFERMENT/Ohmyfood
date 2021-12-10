@@ -32,7 +32,7 @@
     display:grid;
     grid-template-columns: 1fr;
     gap:30px;
-    @media screen and (min-width:1$min-width) {
+    @media screen and (min-width:$min-width) {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     grid-gap:35px;
@@ -42,15 +42,7 @@
 .menu-block h3 {
     margin: 22px 0px;
     position:relative;
-    &::after {
-        content:"";
-        position:absolute;
-        top:24px;
-        left:1px;
-        width: 43px;
-        height: 3px;
-        background-color: $colorTertiary;
-    }
+    @include greenUnderline($color:$colorTertiary, $width:$greeenUnderlineWidth)
 }
 
 .menu-list {

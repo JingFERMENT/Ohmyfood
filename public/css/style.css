@@ -1,8 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   color: #000000;
-  font-style: normal;
-  font-weight: normal;
+  font-size: 16px;
 }
 
 *, *:before, *:after {
@@ -25,6 +24,7 @@ a {
 h1 {
   font-family: "Shrikhand", cursive;
   margin: 15px;
+  font-weight: 500;
 }
 
 h2 {
@@ -55,7 +55,7 @@ img {
 
 .hero-btn, .ordering-btn {
   border-radius: 200px;
-  padding: 17px 40px;
+  padding: 17px 28px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border-color: #ffff;
   color: #ffff;
@@ -235,7 +235,7 @@ footer {
   grid-template-columns: 1fr;
   gap: 30px;
 }
-@media screen and (min-width: 1 1024px) {
+@media screen and (min-width: 1024px) {
   .menu-content {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr;
@@ -252,7 +252,7 @@ footer {
   position: absolute;
   top: 24px;
   left: 1px;
-  width: 43px;
+  width: "43px";
   height: 3px;
   background-color: #99E2D0;
 }
@@ -372,6 +372,11 @@ footer {
   padding: 15px;
   justify-content: center;
   gap: 15px;
+}
+
+.location-text {
+  font-size: 16px;
+  font-weight: 800;
 }
 
 .hero {

@@ -1,7 +1,12 @@
 .location {
     display: flex;
-    background-color:#eaeaea;
+    background-color:$backgroundLocation;
     padding:15px;
     justify-content: center;
     gap:15px;
+}
+
+.location-text {
+    font-size: 16px;
+    font-weight:800;
 }

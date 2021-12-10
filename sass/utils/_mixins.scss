@@ -1,0 +1,11 @@
+@mixin greenUnderline ($color:$colorTertiary, $width:$greeenUnderlineWidth){
+&::after {
+    content:"";
+    position:absolute;
+    top:24px;
+    left:1px;
+    width: $greeenUnderlineWidth;
+    height: 3px;
+    background-color: $colorTertiary;
+    }
+}
