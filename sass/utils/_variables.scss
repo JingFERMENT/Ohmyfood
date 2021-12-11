@@ -1,14 +1,29 @@
+//font family
+$fontFamilyTitle:'Shrikhand', cursive;
+$fontFamilyText:'Roboto', sans-serif;
+
+//font size
+$fontSizeArrowLeft: "22px";
+$fontSizeFooterIcon:"12px";
+$fontSizeHeart:"26px";
+$fontSizeCheck:"15px";
+$fontSizeOperationIcon:"20px";
+
 //color
 $colorPrimary:#9356DC;
 $colorSecondary: #FF79DA;
 $colorTertiary: #99E2D0;
 $colorOperationCardHover:#f5edff;
 $colorNewMenu:#008766;
+$colorFooterButtonRestoCard:#ffff;
+$colorHeroText:#4d4d4dcc;
+$colorOperationIcon:#7d7d7d;
 
 //backgroundColor
 $backgroundColorBloc:#f6f6f6;
 $backgroundColorFooter:#353535;
-$backgroundLocation:#eaeaea;
+$backgroundColorLocation:#eaeaea;
+$backgroundColorMenusHero: #f6f6f6;
 
 //boxshadow
 $boxshadowColorHeader:0 2px 4px 0 rgba(0, 0, 0, 0.2);

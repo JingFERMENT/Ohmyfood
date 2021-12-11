@@ -1,7 +1,7 @@
 .fa-heart {
     display:inline-block;
     z-index:4;
-    font-size:26px;
+    font-size:$fontSizeHeart;
     background-size:100% 0%;
     background-position: bottom;
     transition:all 0.5s ease-in-out;

@@ -4,7 +4,7 @@
     justify-content:center;
     flex-direction:column;
     align-items:center;
-    background-color: #f6f6f6;
+    background-color: $backgroundColorMenusHero;
 }
 
 .hero h2 {
@@ -17,7 +17,7 @@
 }
 
 .hero-text {
-    color:#4d4d4dcc;
+    color:$colorHeroText;
     text-align:center;
     font-size:19px;
     font-weight:400;

@@ -1,12 +1,11 @@
 .location {
     display: flex;
-    background-color:$backgroundLocation;
+    background-color:$colorFooterButtonRestoCard;
     padding:15px;
     justify-content: center;
     gap:15px;
 }
 
 .location-text {
-    font-size: 16px;
     font-weight:800;
 }

@@ -1,6 +1,6 @@
 footer {
     background-color:$backgroundColorFooter;
-    color:#ffff;
+    color:$colorFooterButtonRestoCard;
     padding:40px 20px;
     display:flex;
     justify-content: space-between;
@@ -12,16 +12,12 @@ footer {
 .footer-title {
     font-size: 20px;
     font-weight: 400;
-    font-family:'Shrikhand', cursive;
-}
-
-.footerlist {
-    font-family: 'Roboto', sans-serif;
+    font-family:$fontFamilyTitle;
 }
 
 .footerlist-icon {
     text-align: center;
-    font-size:12px;
+    font-size:$fontSizeFooterIcon;
     width:12px;
 }
 

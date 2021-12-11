@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: $fontFamilyText;
     color: #000000;
     font-size:16px;
 }
@@ -19,7 +19,7 @@ a {
   }
 
 h1 {
-    font-family:'Shrikhand', cursive;
+    font-family:$fontFamilyTitle;
     margin: 15px;
     font-weight:500;
   }
@@ -27,7 +27,6 @@ h1 {
 h2 {
     font-size:25px;
     font-weight:bold;
-    
   }
 
 h3 {
@@ -40,10 +39,6 @@ h4 {
     font-size:17px;
     font-weight:510;
 }
-
-.btn {
-    cursor:pointer;
-  }
 
 img {
     display:block;

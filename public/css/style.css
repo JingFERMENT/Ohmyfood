@@ -43,10 +43,6 @@ h4 {
   font-weight: 510;
 }
 
-.btn {
-  cursor: pointer;
-}
-
 img {
   display: block;
   max-width: 100%;
@@ -57,7 +53,6 @@ img {
   border-radius: 200px;
   padding: 17px 28px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
-  border-color: #ffff;
   color: #ffff;
   filter: brightness(1);
   transition: all 0.25s;
@@ -71,7 +66,7 @@ img {
 .fa-heart {
   display: inline-block;
   z-index: 4;
-  font-size: 26px;
+  font-size: "26px";
   background-size: 100% 0%;
   background-position: bottom;
   transition: all 0.5s ease-in-out;
@@ -138,7 +133,7 @@ img {
 }
 
 .fa-arrow-left {
-  font-size: 22px;
+  font-size: "22px";
   position: absolute;
   left: 20px;
   top: 20px;
@@ -163,13 +158,9 @@ footer {
   font-family: "Shrikhand", cursive;
 }
 
-.footerlist {
-  font-family: "Roboto", sans-serif;
-}
-
 .footerlist-icon {
   text-align: center;
-  font-size: 12px;
+  font-size: "12px";
   width: 12px;
 }
 
@@ -209,7 +200,6 @@ footer {
 .menu-hero-image {
   width: 100%;
   height: 280px;
-  object-fit: cover;
 }
 
 .menu-header {
@@ -323,7 +313,7 @@ footer {
 }
 
 .fa-check {
-  font-size: 15px;
+  font-size: "15px";
   border-radius: 50%;
   border: 10px solid #ffff;
   background-color: #ffff;
@@ -368,14 +358,13 @@ footer {
 }
 .location {
   display: flex;
-  background-color: #eaeaea;
+  background-color: #ffff;
   padding: 15px;
   justify-content: center;
   gap: 15px;
 }
 
 .location-text {
-  font-size: 16px;
   font-weight: 800;
 }
 
@@ -472,7 +461,7 @@ footer {
   color: #7d7d7d;
   text-align: center;
   width: 20px;
-  font-size: 20px;
+  font-size: "15px";
 }
 
 .restaurants {
@@ -512,7 +501,6 @@ footer {
   height: 180px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
-  object-fit: cover;
 }
 
 .restaurant-block {
