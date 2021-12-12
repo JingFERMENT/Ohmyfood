@@ -1,21 +1,21 @@
-.header-title {
+//header sur la page home
+.home-header {
     display:flex;
     justify-content: center;
     position:relative;
     box-shadow:$boxshadowColorHeader;
 }
 
-.header-menu {
+//header sur les pages menus
+.menu-header {
     display:flex;
-    align-items: center;
     justify-content: center;
     position:relative;
-    
-}
-
-.fa-arrow-left {
-    font-size:$fontSizeArrowLeft;
-    position:absolute;
-    left:20px;
-    top: 20px;
+    align-items: center;
+    &_icon {
+        font-size:$fontSizeArrowLeft;
+        position:absolute;
+        left:20px;
+        top:20px;
+    }
 }
