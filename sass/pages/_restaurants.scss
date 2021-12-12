@@ -1,12 +1,13 @@
 .restaurants {
     padding:50px 20px;
     background-color:$backgroundColorBloc;
+    
     h2 {
         margin-bottom: 25px;
     }
 }
 
-.restaurants-lists {
+.restaurants__list {
     display: flex;
     justify-content: space-between;
     gap: 25px;
@@ -27,13 +28,13 @@
     }
 }
 
-.restaurant-image {
+.restaurant-card__image {
     height:180px;
     width:100%;
     border-radius: 20px 20px 0px 0px;
 }
 
-.restaurant-block {
+.restaurant-card__body {
     position:relative;
     padding:15px;
     display:flex;
@@ -43,7 +44,7 @@
     }
 }
 
-.new-restaurant {
+.restaurant-card__new {
     color:$colorNewMenu;
     padding:7px 12px;
     background-color:$colorTertiary;
@@ -53,9 +54,6 @@
     font-size:14px;
 }
 
-.restaurant-location {
-    font-size: 16px;
+.restaurant-card__location {
     font-weight:350;
 }
-
-

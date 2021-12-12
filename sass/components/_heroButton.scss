@@ -1,4 +1,4 @@
-.hero-btn {
+.hero__btn {
     border-radius:200px;
     padding:17px 28px;
     background: $gradient;
@@ -6,7 +6,6 @@
     filter:brightness(1);
     transition:all 0.25s;
     box-shadow:$boxshadowColorHeader;
-    
         &:hover{
             filter:brightness(1.1); 
             box-shadow:$boxshadowHeroButtonHover;

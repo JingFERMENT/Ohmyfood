@@ -17,7 +17,7 @@
 
 <body>
     <div class="loader">
-        <div class="loader_ring"></div>
+        <div class="loader__ring"></div>
     </div>
 
     <div id="container"> 
@@ -32,43 +32,37 @@
     <!--location-->  
         <div class="location">
             <i class="fas fa-map-marker-alt"></i>
-            <p class="location-text">Paris, Belleville</p>
+            <p class="location__text">Paris, Belleville</p>
         </div>
     
     <!--hero-->  
         <section class="hero">
             <h2>Réservez le menu qui vous convient</h2>
-            <p class="hero-text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <a href="#restaurants" class="hero-btn">Explorer nos restaurants</a>
+            <p class="hero__text">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <a href="#restaurants" class="hero__btn">Explorer nos restaurants</a>
         </section>
 
-    <!--operation--> 
-        <section class="operation">
+    <!--functioning--> 
+        <section class="functioning">
             <h2>Fonctionnement</h2>
-            <div class=operation-steps>
-                <div class=operation-step>
-                    <div class="operation-number">1</div>
-                    <span class="operation-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </span>
-                    <p class="operation-text">Choisissez un restaurant</p>
+            <div class="functioning__list">
+                <div class="functioning-card">
+                    <div class="functioning-card__number">1</div>
+                    <i class="functioning-card__icon fas fa-mobile-alt"></i>
+                    <p class="functioning-card__text">Choisissez un restaurant</p>
 
                 </div>
 
-                <div class="operation-step">
-                    <div class="operation-number">2</div>
-                    <span class="operation-icon">
-                        <i class="fas fa-list-ul"></i>
-                    </span>
-                    <p class="operation-text">Composez votre menu</p>
+                <div class="functioning-card">
+                    <div class="functioning-card__number">2</div>
+                    <i class="functioning-card__icon fas fa-list-ul"></i>
+                    <p class="functioning-card__text">Composez votre menu</p>
                 </div>
 
-                <div class="operation-step">
-                    <div class="operation-number">3</div>
-                    <span class="operation-icon">
-                        <i class="fas fa-store"></i>
-                    </span>
-                    <p class="operation-text">Dégustez au restaurant</p>
+                <div class="functioning-card">
+                    <div class="functioning-card__number">3</div>
+                    <i class="functioning-card__icon fas fa-store"></i>
+                    <p class="functioning-card__text">Dégustez au restaurant</p>
                     </div>
             </div>
         </section>
@@ -76,15 +70,15 @@
     <!--restaurants--> 
         <section class="restaurants">
             <h2>Restaurants</h2>
-            <div class="restaurants-lists">
+            <div class="restaurants__list">
                 <article class="restaurant-card">
                     <a href="pagesMenu/la-palette-du-gout.html">
-                        <img class="restaurant-image" src="./public/images/restaurants/LaPaletteDuGout.webp" alt="La Palette du goût"/>
-                        <div class="new-restaurant">Nouveau</div>
-                        <div class="restaurant-block">
-                            <div class="restaurant-block-text">
+                        <img class="restaurant-card__image" src="./public/images/restaurants/LaPaletteDuGout.webp" alt="La Palette du goût"/>
+                        <div class="restaurant-card__new">Nouveau</div>
+                        <div class="restaurant-card__body">
+                            <div class="restaurant-card__text">
                                 <h4>La palette du goût</h4>
-                                <span class="restaurant-location">Ménilmontant</span>
+                                <span class="restaurant-card__location">Ménilmontant</span>
                             </div> 
                             <i class="far fa-heart"></i>
                         </div>
@@ -93,12 +87,12 @@
                                        
                 <article class="restaurant-card">
                     <a href="pagesMenu/la-note-enchantee.html">
-                        <img class="restaurant-image" src="./public/images/restaurants/LaNoteEnchantée.webp" alt="La note enchantée"/>
-                        <div class="new-restaurant">Nouveau</div>
-                        <div class="restaurant-block">
-                            <div class="restaurant-block-text">
+                        <img class="restaurant-card__image" src="./public/images/restaurants/LaNoteEnchantée.webp" alt="La note enchantée"/>
+                        <div class="restaurant-card__new">Nouveau</div>
+                        <div class="restaurant-card__body">
+                            <div class="restaurant-card__text">
                                 <h4>La note enchantée</h4>
-                                <span class="restaurant-location">Charonne</span>
+                                <span class="restaurant-card__location">Charonne</span>
                             </div>
                             <i class="far fa-heart"></i>            
                         </div>
@@ -107,11 +101,11 @@
         
                 <article class="restaurant-card">
                     <a href="pagesMenu/a-la-francaise.html">
-                        <img class="restaurant-image" src="./public/images/restaurants/ALaFrancaise.webp" alt="A la française"/>
-                        <div class="restaurant-block">
-                            <div class="restaurant-block-text">
+                        <img class="restaurant-card__image" src="./public/images/restaurants/ALaFrancaise.webp" alt="A la française"/>
+                        <div class="restaurant-card__body">
+                            <div class="restaurant-card__text">
                                 <h4>A la française</h4>
-                                <span class="restaurant-location">Cité Rouge</span>
+                                <span class="restaurant-card__location">Cité Rouge</span>
                             </div>
                             <i class="far fa-heart"></i>
                         </div>
@@ -120,11 +114,11 @@
 
                 <article class="restaurant-card">
                     <a href="pagesMenu/le-delice-des-sens.html">
-                        <img class="restaurant-image" src="./public/images/restaurants/LeDeliceDesSens.webp" alt="Le délice des sens"/>
-                        <div class="restaurant-block">
-                            <div class="restaurant-block-text">
+                        <img class="restaurant-card__image" src="./public/images/restaurants/LeDeliceDesSens.webp" alt="Le délice des sens"/>
+                        <div class="restaurant-card__body">
+                            <div class="restaurant-card__text">
                                 <h4>Le délice des sens</h4>
-                                <span class="restaurant-location">Folie-Méricourt</span>
+                                <span class="restaurant-card__location">Folie-Méricourt</span>
                             </div>
                             <i class="far fa-heart"></i>
                         </div>
@@ -136,20 +130,16 @@
 
     <!--footer-->
     <footer>
-        <div class="footer-title">ohmyfood</div>
-        <nav class="footer-nav-bar">
+        <div class="footer__title">ohmyfood</div>
+        <nav class="footer__nav">
             <a href=#>
-                <span class="footerlist-icon">
-                    <i class="fas fa-utensils"></i>
-                </span>
-                <p>Proposer un restaurant</p>
+                <i class="footer__icon fas fa-utensils"></i>
+                <span>Proposer un restaurant</span>
             </a>
 
             <a href=#>
-                <span class="footerlist-icon">
-                    <i class="fas fa-hands-helping"></i>
-                </span>
-                <p>Devenir partenaire</p>
+                <i class="footer__icon fas fa-hands-helping"></i>
+                <span>Devenir partenaire</p>
             </a>
 
             <a href=#>Mentions légales</a>

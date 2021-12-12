@@ -1,0 +1,67 @@
+.functioning {
+    padding:40px;
+    @media screen and (max-width: $max-width){
+        padding:60px 20px;
+    }
+}
+
+.functioning__list {
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    gap:40px;
+    @media screen and (max-width:$max-width){
+        flex-direction:column;
+        gap:22px;        
+    }
+}
+
+.functioning h2 {
+    text-align: center;
+    margin-bottom:25px;
+    @media screen and (max-width: $max-width){
+        text-align:left;
+    }
+}
+
+.functioning-card {
+    position:relative;
+    display:flex;
+    align-items:center;
+    background-color:$backgroundColorBloc;
+    padding:25px 38px;
+    border-radius:20px;
+    box-shadow:$boxshadowColorCard;
+    cursor: pointer;
+
+    &:hover {
+        background-color:$colorOperationCardHover;
+        &__icon {
+            color:$colorPrimary;
+        }
+    }
+
+    &__number {
+        position: absolute;
+        left:-8px;
+        border-radius: 200px;
+        background-color:$colorPrimary;
+        color: #ffff;
+        padding: 5px 9px;
+    }
+
+    &__icon {
+        color:$colorOperationIcon;
+        text-align:center;
+        width:20px;
+        font-size:$fontSizefunctioningIcon;
+    }
+
+    &__text {
+        margin-left: 25px;
+        font-weight:600;
+    }
+}
+
+
+
