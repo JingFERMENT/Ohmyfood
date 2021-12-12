@@ -3,11 +3,11 @@ $fontFamilyTitle:'Shrikhand', cursive;
 $fontFamilyText:'Roboto', sans-serif;
 
 //font size
-$fontSizeArrowLeft: "22px";
-$fontSizeFooterIcon:"12px";
-$fontSizeHeart:"26px";
-$fontSizeCheck:"15px";
-$fontSizeOperationIcon:"20px";
+$fontSizeArrowLeft: 22px;
+$fontSizeFooterIcon: 12px;
+$fontSizeHeart:26px;
+$fontSizeCheck: 15px;
+$fontSizeOperationIcon:20px;
 
 //color
 $colorPrimary:#9356DC;
@@ -21,12 +21,12 @@ $colorOperationIcon:#7d7d7d;
 
 //backgroundColor
 $backgroundColorBloc:#f6f6f6;
-$backgroundColorFooter:#353535;
+$backgroundColorFooter:#363636;
 $backgroundColorLocation:#eaeaea;
 $backgroundColorMenusHero: #f6f6f6;
 
 //boxshadow
-$boxshadowColorHeader:0 2px 4px 0 rgba(0, 0, 0, 0.2);
+$boxshadowColorHeader:0 4px 4px 1px rgba(0, 0, 0, 0.2);
 $boxshadowColorCard:1px 4px 10px 0 rgba(0, 0, 0, 0.1);
 $boxshadowHeroButtonHover:2px 8px 8px 0 rgba(0, 0, 0, 0.3);
 
@@ -37,10 +37,10 @@ $gradient:linear-gradient(175deg, $colorSecondary, $colorPrimary);
 $transitionTimingLoader:cubic-bezier(1,.08,.96,.2);
 
 //responsive for mobile
-$max-width: "768px";
+$max-width: 768px;
 
 //responsive for desktop
-$min-width: "1024px";
+$min-width: 1024px;
 
 //green underline width (on the menu pages)
-$greeenUnderlineWidth: "43px";
+$greeenUnderlineWidth: 43px;
