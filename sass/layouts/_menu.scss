@@ -3,12 +3,26 @@
     margin-top:-50px;
     padding: 40px 20px;
     border-radius: 35px 35px 0px 0px;
-    background-color: $backgroundColorMenusHero;
-}
+    background-color: $backgroundColorBloc;
 
-.menu__image {
-    width:100%;
-    height:280px;
+    &__image {
+        width:100%;
+        height:280px;
+    }
+
+    &__main-title {
+        font-family:$fontFamilyTitle;
+        font-size:28px;
+        font-weight:500;
+    }
+
+    &__btn {
+        display:flex;
+        justify-content: center;
+        padding: 40px;
+        background-color:$backgroundColorBloc;
+    }
+
 }
 
 .menu__header {
@@ -21,11 +35,6 @@
     }
 }
 
-.menu__title {
-    font-family:$fontFamilyTitle;
-    font-size:28px;
-    font-weight:500;
-}
 
 .menu__content {
     display:grid;
@@ -38,16 +47,16 @@
     }
 }
 
-.menu-block h3 {
-    margin: 22px 0px;
-    position:relative;
-    @include greenUnderline($color:$colorTertiary, $width:$greeenUnderlineWidth)
-}
-
-.menu-list {
+.menu-group {
     display:flex;
     flex-direction: column;
     gap:20px;
+
+    h3 {
+        margin: 22px 0px;
+        position:relative;
+        @include greenUnderline($color:$colorTertiary, $width:$greeenUnderlineWidth)
+    }
 }
 
 .menu-card {
@@ -57,17 +66,19 @@
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
     background-color: #ffff;
+    animation: card-in 1500ms both;
     &:hover {
-        .menu-card-check {
-            margin-right:0;
+        .menu-card__check { 
+            transform:scaleX(1);
+            margin-right:0px;
         } 
         .fa-check {
             animation:check-in 0.3s $transitionTimingLoader;
         }
-    }
+    }  
 }
 
-.menu-card-body {
+.menu-card__body {
     padding: 13px;
     flex:1;
     width: 235px;
@@ -79,13 +90,13 @@
     }
 }
 
-.menu-card-description {
+.menu-card__description {
     display:flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu-card-text {
+.menu-card__text {
     font-size: 15.5px;
     font-weight:390;
     flex:1;
@@ -94,13 +105,14 @@
     overflow:hidden;
 }
 
-.menu-card-price {
-    font-size:15px;
+.menu-card__price {
+    font-size:15.5px;
+    font-weight: bold;
     display:inline-block;
     margin-right:10px;
 }
 
-.menu-card-check {
+.menu-card__check {
     width:75px;
     display: flex;
     justify-content: center;
@@ -108,7 +120,8 @@
     border-radius: 0 20px 20px 0;
     background-color:$colorTertiary; 
     margin-right:-80px;
-    transition: margin 0.3s ease-in-out;
+    transform:scaleX(0);
+    transition: all 0.3s;
 }
 
 .fa-check {
@@ -119,23 +132,44 @@
     color:$colorTertiary;
 }
 
-.menu__btn {
-    display:inline-block;
-    display:flex;
-    justify-content: center;
-    padding: 40px 40px 0px 40px;
+.menu-card--1 {
+    animation-delay: 300ms;
 }
 
-.delay-bloc-1 {
-    animation: card-in 1s ease-in;
+.menu-card--2 {
+    animation-delay: 600ms;
 }
 
-.delay-bloc-2 {
-    animation: card-in 2s ease-in 0.1s;
+.menu-card--3 {
+    animation-delay: 900ms;
 }
 
-.delay-bloc-3 {
-    animation: card-in 3s ease-in 0.1s;
+.menu-card--4 {
+    animation-delay: 1200ms;
+}
+
+.menu-card--5 {
+    animation-delay: 1500ms;
+}
+
+.menu-card--6 {
+    animation-delay: 1800ms;
+}
+
+.menu-card--7 {
+    animation-delay: 2100ms;
+}
+
+.menu-card--8 {
+    animation-delay: 2600ms;
+}
+
+.menu-card--9 {
+    animation-delay: 2400ms;
+}
+
+.menu-card--10 {
+    animation-delay: 2700ms;
 }
 
 @keyframes card-in {
@@ -151,9 +185,11 @@
 
   @keyframes check-in {
     0% {
+       opacity: 0;
         transform:rotate(0);
     }
     100% {
+        opacity: 1;
         transform:rotate(360deg);
     }
   }
