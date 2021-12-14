@@ -1,7 +1,7 @@
 .menu {
     position:relative;
     margin-top:-50px;
-    padding: 40px 20px;
+    padding: 40px 15px;
     border-radius: 35px 35px 0px 0px;
     background-color: $backgroundColorBloc;
 
@@ -108,11 +108,11 @@
         font-size:15.5px;
         font-weight: bold;
         display:inline-block;
-        margin-right:10px;
+        margin-right:15px;
     }
 
     &__check {
-        width:75px;
+        width:65px;
         @include flexboxCenter;
         border-radius: 0 20px 20px 0;
         background-color:$colorTertiary; 
@@ -166,7 +166,7 @@
 .fa-check {
     font-size:$fontSizeCheck;
     border-radius: 50%;
-    border:10px solid #ffff;
+    border:5px solid #ffff;
     background-color:#ffff;
     color:$colorTertiary;
 }

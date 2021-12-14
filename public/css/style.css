@@ -39,8 +39,8 @@ h3 {
 }
 
 h4 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 18.5px;
+  font-weight: 900;
 }
 
 img {
@@ -68,7 +68,7 @@ img {
   color: #ffff;
   filter: brightness(1);
   transition: all 0.25s;
-  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 .hero__btn:hover, .ordering-btn:hover {
   filter: brightness(1.1);
@@ -119,7 +119,7 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
 }
 
 .menu-header {
@@ -136,7 +136,7 @@ img {
 }
 
 .footer {
-  background-color: #363636;
+  background-color: #353535;
   color: #ffff;
   padding: 40px 20px;
   display: flex;
@@ -187,7 +187,7 @@ img {
 .menu {
   position: relative;
   margin-top: -50px;
-  padding: 40px 20px;
+  padding: 40px 15px;
   border-radius: 35px 35px 0px 0px;
   background-color: #f6f6f6;
 }
@@ -294,10 +294,10 @@ img {
   font-size: 15.5px;
   font-weight: bold;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .menu-card__check {
-  width: 75px;
+  width: 65px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,9 +339,9 @@ img {
 }
 
 .fa-check {
-  font-size: 15px;
+  font-size: 13px;
   border-radius: 50%;
-  border: 10px solid #ffff;
+  border: 5px solid #ffff;
   background-color: #ffff;
   color: #99E2D0;
 }
@@ -389,7 +389,7 @@ img {
 .hero__text {
   color: #4d4d4dcc;
   text-align: center;
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -521,9 +521,11 @@ img {
   top: 10px;
   right: 12px;
   font-size: 14px;
+  font-weight: bold;
 }
 .restaurant-card__location {
-  font-weight: 350;
+  font-size: 17px;
+  font-weight: 398;
 }
 
 /*# sourceMappingURL=style.css.map */
