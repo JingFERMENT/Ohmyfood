@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     gap: 25px;
-    @media screen and (max-width:$max-width) {
+    @include mobil-only {
         display:flex;
         flex-direction:column;
     }
@@ -23,7 +23,7 @@
     background-color:$colorFooterButtonRestoCard;
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
-    @media screen and (max-width: $max-width){
+    @include mobil-only {
         width: 100%;
     }
 }

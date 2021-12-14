@@ -1,6 +1,6 @@
 .functioning {
     padding:40px;
-    @media screen and (max-width: $max-width){
+    @include mobil-only {
         padding:60px 20px;
     }
 }
@@ -10,7 +10,7 @@
     display:flex;
     justify-content: center;
     gap:40px;
-    @media screen and (max-width:$max-width){
+    @include mobil-only {
         flex-direction:column;
         gap:22px;        
     }
@@ -19,7 +19,7 @@
 .functioning h2 {
     text-align: center;
     margin-bottom:25px;
-    @media screen and (max-width: $max-width){
+    @include mobil-only {
         text-align:left;
     }
 }
