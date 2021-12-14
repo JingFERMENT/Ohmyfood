@@ -147,32 +147,31 @@ footer {
     flex-direction: column;
   }
 }
-
-.footer__title {
+footer__title {
   font-size: 20px;
   font-weight: 400;
   font-family: "Shrikhand", cursive;
 }
-
-.footer__icon {
+footer__icon {
   text-align: center;
   font-size: 12px;
   width: 12px;
 }
-
-.footer__nav {
+footer__text {
+  font-weight: 400;
+}
+footer__nav {
   margin-left: 100px;
   display: flex;
 }
 @media screen and (max-width: 768px) {
-  .footer__nav {
+  footer__nav {
     flex-direction: column;
     margin-left: 0px;
     margin-top: 20px;
   }
 }
-
-.footer__nav a {
+footer__nav a {
   list-style: none;
   display: flex;
   padding: 0px 30px;
@@ -180,13 +179,9 @@ footer {
   gap: 10px;
 }
 @media screen and (max-width: 768px) {
-  .footer__nav a {
+  footer__nav a {
     padding: 5px 0px;
   }
-}
-
-.footer__text {
-  font-weight: 400;
 }
 
 .menu {
@@ -200,6 +195,18 @@ footer {
   width: 100%;
   height: 280px;
 }
+.menu_header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .menu_header {
+    justify-content: center;
+    column-gap: 33px;
+  }
+}
 .menu__main-title {
   font-family: "Shrikhand", cursive;
   font-size: 28px;
@@ -211,20 +218,6 @@ footer {
   padding: 40px;
   background-color: #f6f6f6;
 }
-
-.menu__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-  justify-content: space-between;
-}
-@media screen and (min-width: 1024px) {
-  .menu__header {
-    justify-content: center;
-    column-gap: 33px;
-  }
-}
-
 .menu__content {
   display: grid;
   grid-template-columns: 1fr;
@@ -273,7 +266,6 @@ footer {
 .menu-card:hover .fa-check {
   animation: check-in 0.3s cubic-bezier(1, 0.08, 0.96, 0.2);
 }
-
 .menu-card__body {
   padding: 13px;
   flex: 1;
@@ -285,13 +277,11 @@ footer {
   overflow: hidden;
   margin-bottom: 5px;
 }
-
 .menu-card__description {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
 .menu-card__text {
   font-size: 15.5px;
   font-weight: 390;
@@ -300,15 +290,13 @@ footer {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .menu-card__price {
   font-size: 15.5px;
   font-weight: bold;
   display: inline-block;
   margin-right: 10px;
 }
-
-.menu-card__check {
+.menu-card____check {
   width: 75px;
   display: flex;
   justify-content: center;
@@ -319,6 +307,36 @@ footer {
   transform: scaleX(0);
   transition: all 0.3s;
 }
+.menu-card--1 {
+  animation-delay: 300ms;
+}
+.menu-card--2 {
+  animation-delay: 600ms;
+}
+.menu-card--3 {
+  animation-delay: 900ms;
+}
+.menu-card--4 {
+  animation-delay: 1200ms;
+}
+.menu-card--5 {
+  animation-delay: 1500ms;
+}
+.menu-card--6 {
+  animation-delay: 1800ms;
+}
+.menu-card--7 {
+  animation-delay: 2100ms;
+}
+.menu-card--8 {
+  animation-delay: 2400ms;
+}
+.menu-card--9 {
+  animation-delay: 2700ms;
+}
+.menu-card--10 {
+  animation-delay: 3000ms;
+}
 
 .fa-check {
   font-size: 15px;
@@ -326,46 +344,6 @@ footer {
   border: 10px solid #ffff;
   background-color: #ffff;
   color: #99E2D0;
-}
-
-.menu-card--1 {
-  animation-delay: 300ms;
-}
-
-.menu-card--2 {
-  animation-delay: 600ms;
-}
-
-.menu-card--3 {
-  animation-delay: 900ms;
-}
-
-.menu-card--4 {
-  animation-delay: 1200ms;
-}
-
-.menu-card--5 {
-  animation-delay: 1500ms;
-}
-
-.menu-card--6 {
-  animation-delay: 1800ms;
-}
-
-.menu-card--7 {
-  animation-delay: 2100ms;
-}
-
-.menu-card--8 {
-  animation-delay: 2600ms;
-}
-
-.menu-card--9 {
-  animation-delay: 2400ms;
-}
-
-.menu-card--10 {
-  animation-delay: 2700ms;
 }
 
 @keyframes card-in {
@@ -432,7 +410,6 @@ footer {
     padding: 60px 20px;
   }
 }
-
 .functioning__list {
   padding: 10px;
   display: flex;
@@ -445,7 +422,6 @@ footer {
     gap: 22px;
   }
 }
-
 .functioning h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -498,7 +474,6 @@ footer {
 .restaurants h2 {
   margin-bottom: 25px;
 }
-
 .restaurants__list {
   display: flex;
   justify-content: space-between;
@@ -523,13 +498,11 @@ footer {
     width: 100%;
   }
 }
-
 .restaurant-card__image {
   height: 180px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
 }
-
 .restaurant-card__body {
   position: relative;
   padding: 15px;
@@ -539,7 +512,6 @@ footer {
 .restaurant-card__body h4 {
   margin-bottom: 5px;
 }
-
 .restaurant-card__new {
   color: #008766;
   padding: 7px 12px;
@@ -549,7 +521,6 @@ footer {
   right: 12px;
   font-size: 14px;
 }
-
 .restaurant-card__location {
   font-weight: 350;
 }

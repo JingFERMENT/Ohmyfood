@@ -10,6 +10,17 @@
         height:280px;
     }
 
+    &_header {
+        display:flex;
+        align-items: center;
+        margin-bottom:10px;
+        justify-content: space-between;
+        @include desktop {
+            justify-content: center;
+            column-gap: 33px;
+            }
+    }
+
     &__main-title {
         font-family:$fontFamilyTitle;
         font-size:28px;
@@ -23,30 +34,18 @@
         background-color:$backgroundColorBloc;
     }
 
-}
-
-.menu__header {
-    display:flex;
-    align-items: center;
-    margin-bottom:10px;
-    justify-content: space-between;
-    @include desktop {
-        justify-content: center;
-        column-gap: 33px;
+    &__content {
+        display:grid;
+        grid-template-columns: 1fr;
+        gap:30px;
+        @include desktop {
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        grid-gap:35px;
+        }
     }
 }
 
-
-.menu__content {
-    display:grid;
-    grid-template-columns: 1fr;
-    gap:30px;
-    @include desktop {
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 1fr;
-    grid-gap:35px;
-    }
-}
 
 .menu-group {
     display:flex;
@@ -76,53 +75,94 @@
         .fa-check {
             animation:check-in 0.3s $transitionTimingLoader;
         }
-    }  
-}
+    } 
+    
+    &__body {
+        padding: 13px;
+        flex:1;
+        width: 235px;
+        h4 {
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow:hidden;
+            margin-bottom: 5px;
+        }
+    }
 
-.menu-card__body {
-    padding: 13px;
-    flex:1;
-    width: 235px;
-    h4 {
+    &__description {
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__text {
+        font-size: 15.5px;
+        font-weight:390;
+        flex:1;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow:hidden;
-        margin-bottom: 5px;
     }
-}
 
-.menu-card__description {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    &__price {
+        font-size:15.5px;
+        font-weight: bold;
+        display:inline-block;
+        margin-right:10px;
+    }
 
-.menu-card__text {
-    font-size: 15.5px;
-    font-weight:390;
-    flex:1;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    overflow:hidden;
-}
+    &____check {
+        width:75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 20px 20px 0;
+        background-color:$colorTertiary; 
+        margin-right:-80px;
+        transform:scaleX(0);
+        transition: all 0.3s;
+    }
 
-.menu-card__price {
-    font-size:15.5px;
-    font-weight: bold;
-    display:inline-block;
-    margin-right:10px;
-}
+    &--1 {
+        animation-delay: 300ms;
+    }
 
-.menu-card__check {
-    width:75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0 20px 20px 0;
-    background-color:$colorTertiary; 
-    margin-right:-80px;
-    transform:scaleX(0);
-    transition: all 0.3s;
+    &--2 {
+        animation-delay: 600ms;
+    }
+
+    &--3 {
+        animation-delay: 900ms;
+    }
+
+    &--4 {
+        animation-delay: 1200ms;
+    }
+
+    &--5 {
+        animation-delay: 1500ms;
+    }
+
+    &--6 {
+        animation-delay: 1800ms;
+    }
+
+    &--7 {
+        animation-delay: 2100ms;
+    }
+
+    &--8 {
+        animation-delay: 2400ms;
+    }
+
+    &--9 {
+        animation-delay: 2700ms;
+    }
+
+    &--10 {
+        animation-delay: 3000ms;
+    }
+
 }
 
 .fa-check {
@@ -131,46 +171,6 @@
     border:10px solid #ffff;
     background-color:#ffff;
     color:$colorTertiary;
-}
-
-.menu-card--1 {
-    animation-delay: 300ms;
-}
-
-.menu-card--2 {
-    animation-delay: 600ms;
-}
-
-.menu-card--3 {
-    animation-delay: 900ms;
-}
-
-.menu-card--4 {
-    animation-delay: 1200ms;
-}
-
-.menu-card--5 {
-    animation-delay: 1500ms;
-}
-
-.menu-card--6 {
-    animation-delay: 1800ms;
-}
-
-.menu-card--7 {
-    animation-delay: 2100ms;
-}
-
-.menu-card--8 {
-    animation-delay: 2600ms;
-}
-
-.menu-card--9 {
-    animation-delay: 2400ms;
-}
-
-.menu-card--10 {
-    animation-delay: 2700ms;
 }
 
 @keyframes card-in {

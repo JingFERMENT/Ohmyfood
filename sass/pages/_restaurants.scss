@@ -5,15 +5,15 @@
     h2 {
         margin-bottom: 25px;
     }
-}
 
-.restaurants__list {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    @include mobil-only {
-        display:flex;
-        flex-direction:column;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        gap: 25px;
+        @include mobil-only {
+            display:flex;
+            flex-direction:column;
+        }
     }
 }
 
@@ -26,34 +26,34 @@
     @include mobil-only {
         width: 100%;
     }
-}
 
-.restaurant-card__image {
-    height:180px;
-    width:100%;
-    border-radius: 20px 20px 0px 0px;
-}
-
-.restaurant-card__body {
-    position:relative;
-    padding:15px;
-    display:flex;
-    justify-content: space-between;
-    h4 {
-        margin-bottom:5px;
+    &__image {
+        height:180px;
+        width:100%;
+        border-radius: 20px 20px 0px 0px;
     }
-}
 
-.restaurant-card__new {
-    color:$colorNewMenu;
-    padding:7px 12px;
-    background-color:$colorTertiary;
-    position:absolute;
-    top:10px;
-    right:12px;
-    font-size:14px;
-}
+    &__body {
+        position:relative;
+        padding:15px;
+        display:flex;
+        justify-content: space-between;
+        h4 {
+            margin-bottom:5px;
+        }
+    }
 
-.restaurant-card__location {
-    font-weight:350;
+    &__new {
+        color:$colorNewMenu;
+        padding:7px 12px;
+        background-color:$colorTertiary;
+        position:absolute;
+        top:10px;
+        right:12px;
+        font-size:14px;
+    }
+
+    &__location {
+        font-weight:350;
+    }
 }

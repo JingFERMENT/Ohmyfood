@@ -7,41 +7,41 @@ footer {
     @include mobil-only {
         flex-direction: column;
     }
-}
 
-.footer__title {
-    font-size: 20px;
-    font-weight: 400;
-    font-family:$fontFamilyTitle;
-}
+    &__title {
+        font-size: 20px;
+        font-weight: 400;
+        font-family:$fontFamilyTitle;
+    }
 
-.footer__icon {
-    text-align: center;
-    font-size:$fontSizeFooterIcon;
-    width:12px;
-}
+    &__icon {
+        text-align: center;
+        font-size:$fontSizeFooterIcon;
+        width:12px;
+    }
 
-.footer__nav {
-    margin-left: 100px;
+    &__text {
+        font-weight:400;
+    }
+
+    &__nav {
+        margin-left: 100px;
     display:flex;
     @include mobil-only {
         flex-direction: column;
         margin-left:0px;
         margin-top:20px;
     }
-}
 
-.footer__nav a {
-    list-style: none;
-    display:flex;
-    padding: 0px 30px;
-    align-items: center;
-    gap:10px;
-    @include mobil-only {
-        padding: 5px 0px;
+    a {
+        list-style: none;
+        display:flex;
+        padding: 0px 30px;
+        align-items: center;
+        gap:10px;
+        @include mobil-only {
+            padding: 5px 0px;
+        }
     }
 }
-
-.footer__text {
-    font-weight:400;
 }
