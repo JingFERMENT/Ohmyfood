@@ -1,17 +1,14 @@
 //header sur la page home
 .home-header {
-    display:flex;
-    justify-content: center;
+    @include flexboxCenter;
     position:relative;
     box-shadow:$boxshadowColorHeader;
 }
 
 //header sur les pages menus
 .menu-header {
-    display:flex;
-    justify-content: center;
+    @include flexboxCenter;
     position:relative;
-    align-items: center;
     &__icon {
         font-size:$fontSizeArrowLeft;
         position:absolute;

@@ -26,7 +26,7 @@
 
     &__nav {
         margin-left: 100px;
-    display:flex;
+        display:flex;
     @include mobil-only {
         flex-direction: column;
         margin-left:0px;

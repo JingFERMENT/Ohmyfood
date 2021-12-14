@@ -1,6 +1,5 @@
 .location {
-    display: flex;
-    justify-content: center;
+    @include flexboxCenter;
     background-color:$backgroundColorLocation;
     padding:15px;
     gap:15px;

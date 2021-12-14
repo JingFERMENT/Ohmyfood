@@ -1,9 +1,7 @@
 .hero {
     padding:50px 20px;
-    display:flex;
-    justify-content:center;
+    @include flexboxCenter;
     flex-direction:column;
-    align-items:center;
     background-color: $backgroundColorBloc;
     
     &__text {
