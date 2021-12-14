@@ -6,6 +6,7 @@
     filter:brightness(1);
     transition:all 0.25s;
     box-shadow:$boxshadowColorHeader;
+    
         &:hover{
             filter:brightness(1.1); 
             box-shadow:$boxshadowHeroButtonHover;

@@ -29,9 +29,10 @@
     display:flex;
     align-items: center;
     margin-bottom:10px;
-    column-gap:33px;
-    @media screen and (min-width:$min-width){
+    justify-content: space-between;
+    @include desktop {
         justify-content: center;
+        column-gap: 33px;
     }
 }
 
@@ -40,7 +41,7 @@
     display:grid;
     grid-template-columns: 1fr;
     gap:30px;
-    @media screen and (min-width:$min-width) {
+    @include desktop {
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     grid-gap:35px;

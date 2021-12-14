@@ -9,12 +9,7 @@
     align-items:center;
     animation:fade-in 3s $transitionTimingLoader forwards;
     &__ring {    
-        width: 120px;
-        height: 120px;
-        padding: 10px;
-        border-radius: 50%;
-        border: 12px solid;
-        border-color:$colorPrimary $colorTertiary $colorSecondary $colorPrimary;
+       @include ring($height:120px, $width:120px);
         animation: ring 1s linear infinite;
     }
   }

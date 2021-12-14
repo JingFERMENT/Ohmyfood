@@ -44,8 +44,6 @@ h4 {
 }
 
 img {
-  display: block;
-  max-width: 100%;
   object-fit: cover;
 }
 
@@ -218,11 +216,12 @@ footer {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  column-gap: 33px;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1024px) {
   .menu__header {
     justify-content: center;
+    column-gap: 33px;
   }
 }
 
@@ -416,6 +415,7 @@ footer {
   margin-bottom: 30px;
 }
 .hero h2 {
+  text-align: center;
   margin-bottom: 12px;
 }
 @media screen and (max-width: 768px) {

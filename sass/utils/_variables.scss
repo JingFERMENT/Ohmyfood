@@ -35,11 +35,8 @@ $gradient:linear-gradient(175deg, $colorSecondary, $colorPrimary);
 //transition-timing
 $transitionTimingLoader:cubic-bezier(1,.08,.96,.2);
 
-//responsive for mobile
-$max-width: 768px;
-
-//responsive for desktop
-$min-width: 1024px;
-
+//breakpoints
+$breakpoints:("mobil": 768px, "desktop": 1024px);
+   
 //green underline width (on the menu pages)
 $greeenUnderlineWidth: 43px;
