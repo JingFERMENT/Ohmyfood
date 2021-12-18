@@ -29,12 +29,22 @@
     }
 }
 
-//responsive for desktop or tablet
+//responsive for tablet
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, mobil)) and (max-width:map-get($breakpoints,desktop))
+    {
+     @content;
+    }
+}
+
+//responsive for desktop
 @mixin desktop {
     @media screen and (min-width: map-get($breakpoints,desktop)){
      @content;
     }
 }
+
+//
 
 @mixin flexboxCenter {
     display:flex;

@@ -7,6 +7,10 @@
     @include mobil-only {
         flex-direction: column;
     }
+    @include tablet {
+        padding:40px 40px; 
+        flex-direction: column;
+    }
 
     &__title {
         font-size: 20px;
@@ -32,6 +36,12 @@
         margin-left:0px;
         margin-top:20px;
     }
+    @include tablet {
+        flex-direction: column;
+        margin-left:0px;
+        margin-top: 20px;
+    }
+
 
     a {
         list-style: none;
@@ -40,6 +50,9 @@
         align-items: center;
         gap:10px;
         @include mobil-only {
+            padding: 5px 0px;
+        }
+        @include tablet {
             padding: 5px 0px;
         }
     }

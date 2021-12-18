@@ -14,6 +14,10 @@
             display:flex;
             flex-direction:column;
         }
+        @include tablet {
+            display:flex;
+            flex-direction:column;
+        }
     }
 }
 
@@ -24,6 +28,9 @@
     border-radius: 20px;
     box-shadow: $boxshadowColorCard;
     @include mobil-only {
+        width: 100%;
+    }
+    @include tablet {
         width: 100%;
     }
 

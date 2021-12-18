@@ -4,12 +4,17 @@
         padding:60px 20px;
     }
 
+
     &__list {
         padding:10px;
         display:flex;
         justify-content: center;
         gap:40px;
         @include mobil-only {
+            flex-direction:column;
+            gap:22px;        
+        }
+        @include tablet {
             flex-direction:column;
             gap:22px;        
         }

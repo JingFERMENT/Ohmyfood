@@ -149,6 +149,12 @@ img {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    padding: 40px 40px;
+    flex-direction: column;
+  }
+}
 .footer__title {
   font-size: 20px;
   font-weight: 400;
@@ -173,6 +179,13 @@ img {
     margin-top: 20px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer__nav {
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+}
 .footer__nav a {
   list-style: none;
   display: flex;
@@ -181,6 +194,11 @@ img {
   gap: 10px;
 }
 @media screen and (max-width: 768px) {
+  .footer__nav a {
+    padding: 5px 0px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .footer__nav a {
     padding: 5px 0px;
   }
@@ -443,6 +461,12 @@ img {
     gap: 22px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .functioning__list {
+    flex-direction: column;
+    gap: 22px;
+  }
+}
 .functioning h2 {
   text-align: center;
   margin-bottom: 25px;
@@ -506,6 +530,12 @@ img {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .restaurant-card {
   position: relative;
@@ -515,6 +545,11 @@ img {
   box-shadow: 1px 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 @media screen and (max-width: 768px) {
+  .restaurant-card {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .restaurant-card {
     width: 100%;
   }
