@@ -51,6 +51,7 @@ img {
   font-size: 26px;
   transition: background 0.5s ease-in-out;
   height: 46px;
+  margin-right: 10px;
 }
 .fa-heart:hover {
   background: linear-gradient(175deg, white 0%, white 30%, #FF79DA, #9356DC);
