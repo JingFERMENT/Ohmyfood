@@ -51,6 +51,7 @@ img {
   font-size: 26px;
   transition: background 0.5s ease-in-out;
   height: 46px;
+  margin-right: 10px;
 }
 .fa-heart:hover {
   background: linear-gradient(175deg, white 0%, white 30%, #FF79DA, #9356DC);
@@ -68,7 +69,7 @@ img {
   color: #ffff;
   filter: brightness(1);
   transition: all 0.25s;
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 .hero__btn:hover, .ordering-btn:hover {
   filter: brightness(1.1);
@@ -119,7 +120,7 @@ img {
   justify-content: center;
   align-items: center;
   position: relative;
-  box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.15);
 }
 
 .menu-header {
