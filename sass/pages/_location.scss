@@ -5,6 +5,15 @@
     gap:15px;
     
     &__text {
+        border:none;
         font-weight:800;
+        background-color: transparent;
+        color:$colorHeroText;
+        width: 8em;
     }
+
+    ::-webkit-input-placeholder {  color:#000000; opacity: 1; }
+    ::-moz-placeholder {  color:#000000; opacity: 1;}
+    input:-moz-placeholder {  color:#000000; opacity: 1;} 
+    /*pour que la couleur noire s'affiche dans Chrome et Firefox*/
 }

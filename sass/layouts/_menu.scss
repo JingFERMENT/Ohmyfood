@@ -15,6 +15,7 @@
         align-items: center;
         margin-bottom:10px;
         justify-content: space-between;
+        align-items: flex-start;
         @include desktop {
             justify-content: center;
             column-gap: 33px;
@@ -73,7 +74,7 @@
             margin-right:0px;
         } 
         .fa-check {
-            animation:check-in 0.3s $transitionTimingLoader;
+            animation:check-in 0.3s ease-in-out;
         }
     } 
     
@@ -121,46 +122,11 @@
         transition: all 0.3s;
     }
 
-    &--1 {
-        animation-delay: 300ms;
+    @for $i from 1 to 10 {
+        &--#{$i}{
+            animation-delay: #{$i*300}ms;
+        }
     }
-
-    &--2 {
-        animation-delay: 600ms;
-    }
-
-    &--3 {
-        animation-delay: 900ms;
-    }
-
-    &--4 {
-        animation-delay: 1200ms;
-    }
-
-    &--5 {
-        animation-delay: 1500ms;
-    }
-
-    &--6 {
-        animation-delay: 1800ms;
-    }
-
-    &--7 {
-        animation-delay: 2100ms;
-    }
-
-    &--8 {
-        animation-delay: 2400ms;
-    }
-
-    &--9 {
-        animation-delay: 2700ms;
-    }
-
-    &--10 {
-        animation-delay: 3000ms;
-    }
-
 }
 
 .fa-check {
