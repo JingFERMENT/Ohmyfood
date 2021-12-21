@@ -13,3 +13,5 @@ Projet OpenClassrooms. L'objectif est de développer un site web avec des animat
 - Les pages doivent passer la validation W3C.
 
 - Le site doit être compatible avec les dernières versions de Chrome et Firefox.
+
+Pour configurer les dossiers SASS, il faudrait aller sur le fichier package.json.
